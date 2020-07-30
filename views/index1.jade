@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style1.css')
+    block head
+  body#education
+    header
+      nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+        a.navbar-brand(href='#') Jierui Peng
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/aboutMe') About Me
+            li.nav-item
+              a.nav-link(href='/education') Education
+            li.nav-item
+              a.nav-link(href='/experiences') Experiences
+            li.nav-item
+              a.nav-link(href='/publications') Publications
+            li.nav-item
+              a.nav-link(href='/certificates') Certificates
+          form.form-inline.mt-2.mt-md-0
+            a.btn.btn-primary.btn-lg.active(href='/resume', role='button', aria-pressed='true') View My Resume
+    main
+      #carouselIndex.carousel.slide(data-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100.h-100(src='./images/index.jpg')
+
+
+
+    block content
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")

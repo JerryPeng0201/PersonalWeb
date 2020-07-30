@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block head
+  body.text-center#aboutMe
+    .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column#generalContainer
+      .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column#aboutMeCover1
+        header.masthead.mb-auto
+          .inner
+            h3.masthead-brand Jierui
+            nav.nav.nav-masthead.justify-content-center
+              a.nav-link(href='/') Home
+              a.nav-link.active(href='aboutMe') About Me
+              a.nav-link(href='/education') Education
+              a.nav-link(href='#') Experiences
+              a.nav-link(href='#') Publications
+              a.nav-link(href='#') Certificates
+      .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-row-reverse#aboutMeCover
+        .card#aboutMeCard(style='width: 40rem;')
+          .card-body
+            h5.card-title ABOUT ME
+            p.lead
+              | Hello! I am Jierui Peng, a senior student majoring in Computer Science and Economy
+              | at Brandeis University, with my research interest focused on machine learning and its
+              | applications to pattern recognition, objects detection, picture classification, and medical imaging.
+            p.lead
+              | NAME: Jierui Peng
+            p.lead
+              | ADDRESS: MB0068, 415 South St., Waltham, MA 02453
+            p.lead
+              | PHONE: (781)530-6298
+            p.lead
+              | EMAIL ADDRESS: jerrypeng999@gmail.com
+
+    block content
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")

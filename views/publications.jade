@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style1.css')
+    block head
+  body#education
+    header
+      nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+        a.navbar-brand(href='/') Jierui Peng
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/aboutMe') About Me
+            li.nav-item
+              a.nav-link(href='/education') Education
+            li.nav-item
+              a.nav-link(href='/experiences') Experiences
+            li.nav-item.active
+              a.nav-link(href='/publications') Publications
+            li.nav-item
+              a.nav-link(href='/certificates') Certificates
+          form.form-inline.mt-2.mt-md-0
+            a.btn.btn-primary.btn-lg.active(href='/resume', role='button', aria-pressed='true') View My Resume
+    main
+      .nav-scroller.py-1.mb-2
+
+      .jumbotron.p-4.p-md-5.text-white.rounded.bg-dark
+        .col-md-6.px-0
+          h1.display-4.font-italic Robot Localization & Navigation
+          p.lead.my-3
+            | ORB-SLAM, IMU and Wheel Odometry Fusion for Indoor Mobile Robot Localization and Navigation.
+          p.lead.mb-0
+            a.text-white.font-weight-bold(href='https://francis-press.com/index.php/papers/1560') Continue reading...
+      .row.mb-2
+        .col-md-6
+          .row.no-gutters.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative
+            .col.p-4.d-flex.flex-column.position-static
+              strong.d-inline-block.mb-2.text-primary Computer Vision
+              h3.mb-0 ORB-SLAM, IMU and Wheel Odometry Fusion for Indoor Mobile Robot Localization and Navigation
+              .mb-1.text-muted Academic Journal of Computing & Information Science
+              p.card-text.mb-auto
+                p
+                | •	Proposed a light-weight multi-sensor fusion method containing ORB-SLAM, IMU and wheel odometry for localization and navigation of an indoor mobile robot in GPS-denied environment. ORB-SLAM based on feature matching computes real-time camera pose. The Inertial Measurement Unit (IMU) measures the angular velocity of the robot by one of its gyroscopes. The wheel odometry provides linear motion velocity for the robot and records distance the robot has moved
+                p
+                | • Leveraged both rotation characteristic of IMU and linear characteristic of wheel odometry to obtain the localization estimation of robot and relatively accurate mapping scale of the real world for ORB-SLAM; Revised the monocular camera pose of ORB-SLAM to obtain global robot pose estimation in the real world via mapping scale iteration.
+              a.stretched-link(href='https://francis-press.com/index.php/papers/1560') Continue reading
+
+        .col-md-6
+          .row.no-gutters.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative
+            .col.p-4.d-flex.flex-column.position-static
+              strong.d-inline-block.mb-2.text-primary Computer Vision
+              h3.mb-0 Novel Fast Corner Detection Descriptor in Image Processing
+              .mb-1.text-muted International Core Journal of Engineering
+              p
+              p.mb-auto
+                | •	Presented a novel fast corner detection method and performed experimental validation for several images
+                p
+                | •	Extracted and marked all the corner pixels via iterating each pixel of the image and applied to Fast Corner Detection algorithm that proved to time-efficiency for image data processing.
+                p
+                p
+                p
+                p
+                p
+              a.stretched-link(href='http://www.icj-e.org/download/ICJE-6-7-353-357.pdf') Continue reading
+
+
+
+
+    block content
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")

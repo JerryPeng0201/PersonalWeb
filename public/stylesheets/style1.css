@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav#welcomePage{
+  background: white;
+  font-size: 1.5em;
+  height: 80px;
+  margin-top: -40px;
+  font-family: serif;
+  z-index: 1;
+}
+
+#navbarHead.p {
+  font-size: 1.5em;
+}
+
+#dropdownItems{
+  font-size: 1.2em;
+}
+
+#carouselIndex{
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: -50px;
+}
+
+#jumbotronMe{
+  background-image: url("../images/me.jpg");
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: -50px;
+}
